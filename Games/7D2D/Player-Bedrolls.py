@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+# steamUser available at https://github.com/zeo/python-steamuser
 from steamUser import steamUser
 import os
 
