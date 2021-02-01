@@ -12,7 +12,7 @@ find -name "* *" -type d | rename 's/ /-/g'
 # Find all files in current folder and subfolders with the extension .png or .jpg
 for file in $(find -name "*.png" -or -name "*.jpg" -type f)
 do
-    # Identify inage dimentions
+    # Identify image dimentions
     x=$(identify "${file}" | cut -d " " -f 3 | cut -d "x" -f 1)
     y=$(identify "${file}" | cut -d " " -f 3 | cut -d "x" -f 2)
     # Format data for printing later
